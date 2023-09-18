@@ -1,4 +1,4 @@
-=== Fbs Gutenberg Blocks ===
+=== FBS WordPress Blocks ===
 Contributors:      fazlebari
 Tags:              block,GutenbergBlocks,pricingTable,WordPressBlocks,GutenbergEditor,WordPressPlugins,PageBuilder,BlockLibrary
 Tested up to:      6.1
@@ -10,7 +10,7 @@ A good collection of Gutenberg blocks. Design a beautiful website.
 
 == Description ==
 
-Easily create eye-catching and informative pricing tables for your WordPress website with the Fbs Gutenberg Blocks. This Gutenberg block empowers you to showcase your products, services, or subscription plans in a visually appealing and organized manner.
+Easily create eye-catching and informative pricing tables for your WordPress website with the FBS WordPress Blocks. This Gutenberg block empowers you to showcase your products, services, or subscription plans in a visually appealing and organized manner.
 
  See demos - https://www.chitabd.com/fbs-gutenberg-blocks/
 
@@ -33,15 +33,15 @@ Ensure your pricing tables look great on any device, providing a consistent user
 No coding skills required. Create professional-looking pricing tables with just a few clicks.
 
 **Scalable Solution**<br>
-This is just the beginning! Fbs Gutenberg Blocks is part of a growing collection of powerful Gutenberg blocks.
+This is just the beginning! FBS WordPress Blocks is part of a growing collection of powerful Gutenberg blocks.
 
 **Get Started**
 
-=> Install and activate the Fbs Gutenberg Blocks.
+=> Install and activate the FBS WordPress Blocks.
 => Open the Gutenberg editor and add a new block. Look for "Pricing Table" in the block library.
 => Customize your pricing table with ease, adding details, features, and styling to fit your brand.
 => Publish your page or post to showcase your pricing options to your audience.
-=> Elevate your product or service offerings with beautifully designed pricing tables. Fbs Gutenberg Blocks simplifies the process, allowing you to focus on what matters most - connecting with your customers.
+=> Elevate your product or service offerings with beautifully designed pricing tables. FBS WordPress Blocks simplifies the process, allowing you to focus on what matters most - connecting with your customers.
 
 == Installation ==
 
@@ -51,17 +51,17 @@ This is just the beginning! Fbs Gutenberg Blocks is part of a growing collection
 
 == Frequently Asked Questions ==
 
-= Can I use Fbs Gutenberg Blocks with any WordPress theme? =
+= Can I use FBS WordPress Blocks with any WordPress theme? =
 
-Yes, Fbs Gutenberg Blocks is designed to be compatible with any WordPress theme. It seamlessly integrates with your existing setup, allowing you to enhance your content creation experience without any conflicts
+Yes, FBS WordPress Blocks is designed to be compatible with any WordPress theme. It seamlessly integrates with your existing setup, allowing you to enhance your content creation experience without any conflicts
 
-= What types of blocks are included in Fbs Gutenberg Blocks?=
+= What types of blocks are included in FBS WordPress Blocks?=
 
 1. Pricing Table
 
-== Is Fbs Gutenberg Blocks mobile-friendly? ==
+== Is FBS WordPress Blocks mobile-friendly? ==
 
-Yes, all blocks in Fbs Gutenberg Blocks are designed to be fully responsive and mobile-friendly. Your content will look great on all devices, ensuring a seamless user experience.
+Yes, all blocks in FBS WordPress Blocks are designed to be fully responsive and mobile-friendly. Your content will look great on all devices, ensuring a seamless user experience.
 
 == Screenshots ==
 
