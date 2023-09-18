@@ -12,6 +12,8 @@ A good collection of Gutenberg blocks. Design a beautiful website.
 
 Easily create eye-catching and informative pricing tables for your WordPress website with the Fbs Gutenberg Blocks. This Gutenberg block empowers you to showcase your products, services, or subscription plans in a visually appealing and organized manner.
 
+ See demos - https://www.chitabd.com/fbs-gutenberg-blocks/
+
 🔅 ** Key Features: **🔅<br>
 Here is some inportent featurs of the plugin. <br>
 
@@ -49,21 +51,23 @@ This is just the beginning! Fbs Gutenberg Blocks is part of a growing collection
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= Can I use Fbs Gutenberg Blocks with any WordPress theme? =
 
-An answer to that question.
+Yes, Fbs Gutenberg Blocks is designed to be compatible with any WordPress theme. It seamlessly integrates with your existing setup, allowing you to enhance your content creation experience without any conflicts
 
-= What about foo bar? =
+= What types of blocks are included in Fbs Gutenberg Blocks?=
 
-Answer to foo bar dilemma.
+1. Pricing Table
+
+== Is Fbs Gutenberg Blocks mobile-friendly? ==
+
+Yes, all blocks in Fbs Gutenberg Blocks are designed to be fully responsive and mobile-friendly. Your content will look great on all devices, ensuring a seamless user experience.
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. Example One
+2. Example Two
+3. Example Three
 
 == Changelog ==
 
