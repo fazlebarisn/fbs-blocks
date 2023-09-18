@@ -158,6 +158,10 @@ html {
   padding: 1rem 0;
 }
 
+.fbs-pricing-table::after {
+  border: none;
+}
+
 .fbs-card.active h3.pack {
   color: #fff;
 }

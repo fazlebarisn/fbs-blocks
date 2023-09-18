@@ -157,7 +157,9 @@ html {
 }
 
 
-
+.fbs-pricing-table::after{
+	border: none;
+}
 .fbs-card.active h3.pack {
     color: #fff;
 }
