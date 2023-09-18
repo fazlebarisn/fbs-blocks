@@ -1,8 +1,8 @@
 /******/ (function() { // webpackBootstrap
 var __webpack_exports__ = {};
-/*!*********************!*\
-  !*** ./src/view.js ***!
-  \*********************/
+/*!***********************************!*\
+  !*** ./src/pricing-table/view.js ***!
+  \***********************************/
 /**
  * Use this file for JavaScript code that you want to run in the front-end
  * on posts/pages that contain this block.
@@ -20,10 +20,6 @@ var __webpack_exports__ = {};
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script
  */
-
-/* eslint-disable no-console */
-console.log('Hello World! (from create-block-fbs-gutenberg-blocks block)');
-/* eslint-enable no-console */
 /******/ })()
 ;
 //# sourceMappingURL=view.js.map
