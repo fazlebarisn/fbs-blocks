@@ -15,7 +15,7 @@ class FBS_GB_BLOCKS {
 
 	protected function __construct() {
 		// load class.
-		Assets::get_instance();
+		// Assets::get_instance();
 
 		$this->setup_hooks();
 	}
@@ -33,8 +33,6 @@ class FBS_GB_BLOCKS {
 	 */
 	public function register_block(){
 		$block_names = [
-			'testimonial',
-			'subscribe',
 			'pricing-table',
 		];
 		
@@ -50,10 +48,6 @@ class FBS_GB_BLOCKS {
 	 */
 	public function register_categories(){
 		$category_names = [
-			[
-				'title'	=> esc_html__( 'Fbs Test', 'fbs-block' ),
-				'slug' => 'fbs-test',
-			],
 			[
 				'title'	=> esc_html__( 'Fbs Blocks', 'fbs-block' ),
 				'slug' => 'fbs-blocks',
