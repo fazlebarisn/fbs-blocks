@@ -79,7 +79,7 @@ function Edit({
     initialOpen: false
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
     className: "blocks-base-control__input",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Change Pricing text', 'fbs-gutenberg-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Change Pricing text', 'fbs-blocks'),
     value: title,
     onChange: title => setAttributes({
       title: title
@@ -89,14 +89,14 @@ function Edit({
     initialOpen: false
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
     className: "blocks-base-control__input",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title text', 'fbs-gutenberg-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title text', 'fbs-blocks'),
     value: starterTitle,
     onChange: title => setAttributes({
       starterTitle: title
     })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalNumberControl, {
     className: "blocks-base-control__input",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Price', 'fbs-gutenberg-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Price', 'fbs-blocks'),
     isShiftStepEnabled: true,
     shiftStep: 10,
     value: starterPrice,
@@ -105,20 +105,20 @@ function Edit({
     })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
     className: "blocks-base-control__input",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button text', 'fbs-gutenberg-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button text', 'fbs-blocks'),
     value: starterBtnText,
     onChange: btnText => setAttributes({
       starterBtnText: btnText
     })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
     className: "blocks-base-control__input",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Url', 'fbs-gutenberg-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Url', 'fbs-blocks'),
     value: starterBtnUrl,
     onChange: btnUrl => setAttributes({
       starterBtnUrl: btnUrl
     })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PanelColorSettings, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Colors', 'fbs-gutenberg-blocks'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Colors', 'fbs-blocks'),
     initialOpen: false,
     colors: colors,
     colorSettings: [{
@@ -126,39 +126,39 @@ function Edit({
       onChange: color => setAttributes({
         starterBg: color
       }),
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Card Background', 'fbs-gutenberg-blocks')
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Card Background', 'fbs-blocks')
     }, {
       value: starterColor,
       onChange: color => setAttributes({
         starterColor: color
       }),
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Card Text Color', 'fbs-gutenberg-blocks')
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Card Text Color', 'fbs-blocks')
     }, {
       value: starterBtnColor,
       onChange: color => setAttributes({
         starterBtnColor: color
       }),
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(' Button Text Color', 'fbs-gutenberg-blocks')
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(' Button Text Color', 'fbs-blocks')
     }, {
       value: starterBtnBg,
       onChange: color => setAttributes({
         starterBtnBg: color
       }),
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Background Color', 'fbs-gutenberg-blocks')
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Background Color', 'fbs-blocks')
     }]
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
     title: "Premium",
     initialOpen: false
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
     className: "blocks-base-control__input",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title text', 'fbs-gutenberg-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title text', 'fbs-blocks'),
     value: premiumTitle,
     onChange: title => setAttributes({
       premiumTitle: title
     })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalNumberControl, {
     className: "blocks-base-control__input",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Price', 'fbs-gutenberg-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Price', 'fbs-blocks'),
     isShiftStepEnabled: true,
     shiftStep: 10,
     value: premiumPrice,
@@ -167,20 +167,20 @@ function Edit({
     })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
     className: "blocks-base-control__input",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button text', 'fbs-gutenberg-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button text', 'fbs-blocks'),
     value: premiumBtnText,
     onChange: btnText => setAttributes({
       premiumBtnText: btnText
     })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
     className: "blocks-base-control__input",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Url', 'fbs-gutenberg-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Url', 'fbs-blocks'),
     value: premiumBtnUrl,
     onChange: btnUrl => setAttributes({
       premiumBtnUrl: btnUrl
     })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PanelColorSettings, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Colors', 'fbs-gutenberg-blocks'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Colors', 'fbs-blocks'),
     initialOpen: false,
     colors: colors,
     colorSettings: [{
@@ -188,39 +188,39 @@ function Edit({
       onChange: color => setAttributes({
         premiumBg: color
       }),
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Card Background', 'fbs-gutenberg-blocks')
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Card Background', 'fbs-blocks')
     }, {
       value: premiumColor,
       onChange: color => setAttributes({
         premiumColor: color
       }),
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Text Color', 'fbs-gutenberg-blocks')
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Text Color', 'fbs-blocks')
     }, {
       value: premiumTextColor,
       onChange: color => setAttributes({
         premiumTextColor: color
       }),
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Text Color', 'fbs-gutenberg-blocks')
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Text Color', 'fbs-blocks')
     }, {
       value: premiumBgColor,
       onChange: color => setAttributes({
         premiumBgColor: color
       }),
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Background Color', 'fbs-gutenberg-blocks')
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Background Color', 'fbs-blocks')
     }]
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
     title: "Business",
     initialOpen: false
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
     className: "blocks-base-control__input",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title text', 'fbs-gutenberg-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title text', 'fbs-blocks'),
     value: businessTitle,
     onChange: title => setAttributes({
       businessTitle: title
     })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalNumberControl, {
     className: "blocks-base-control__input",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Price', 'fbs-gutenberg-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Price', 'fbs-blocks'),
     isShiftStepEnabled: true,
     shiftStep: 10,
     value: businessPrice,
@@ -229,20 +229,20 @@ function Edit({
     })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
     className: "blocks-base-control__input",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button text', 'fbs-gutenberg-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button text', 'fbs-blocks'),
     value: businessBtnText,
     onChange: btnText => setAttributes({
       businessBtnText: btnText
     })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
     className: "blocks-base-control__input",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Url', 'fbs-gutenberg-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Url', 'fbs-blocks'),
     value: businessBtnUrl,
     onChange: btnUrl => setAttributes({
       businessBtnUrl: btnUrl
     })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PanelColorSettings, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Colors', 'fbs-gutenberg-blocks'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Colors', 'fbs-blocks'),
     initialOpen: false,
     colors: colors,
     colorSettings: [{
@@ -250,25 +250,25 @@ function Edit({
       onChange: color => setAttributes({
         businessBg: color
       }),
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Card Background', 'fbs-gutenberg-blocks')
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Card Background', 'fbs-blocks')
     }, {
       value: businesscolor,
       onChange: color => setAttributes({
         businesscolor: color
       }),
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Card Text Color', 'fbs-gutenberg-blocks')
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Card Text Color', 'fbs-blocks')
     }, {
       value: businessBtnColor,
       onChange: color => setAttributes({
         businessBtnColor: color
       }),
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Text Color', 'fbs-gutenberg-blocks')
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Text Color', 'fbs-blocks')
     }, {
       value: businessBtnBg,
       onChange: color => setAttributes({
         businessBtnBg: color
       }),
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Background Color', 'fbs-gutenberg-blocks')
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Background Color', 'fbs-blocks')
     }]
   })))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "fbs-pricing-table"
@@ -298,7 +298,7 @@ function Edit({
     onChange: content => setAttributes({
       starterContent: content
     }),
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add list', 'fbs-gutenberg-blocks')
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add list', 'fbs-blocks')
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: starterBtnUrl
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
@@ -331,7 +331,7 @@ function Edit({
     onChange: premiumContent => setAttributes({
       premiumContent
     }),
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add list', 'fbs-gutenberg-blocks')
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add list', 'fbs-blocks')
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: premiumBtnUrl
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
@@ -364,7 +364,7 @@ function Edit({
     onChange: businessContent => setAttributes({
       businessContent
     }),
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add list', 'fbs-gutenberg-blocks')
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add list', 'fbs-blocks')
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: businessBtnUrl
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
