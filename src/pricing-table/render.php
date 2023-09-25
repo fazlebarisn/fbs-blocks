@@ -5,9 +5,9 @@
  */
 //style= background:starterBg,color:starterColor
 
-$starterContent = $attributes['starterContent'] ? $attributes['starterContent'] : '';
-$premiumContent = $attributes['premiumContent'] ? $attributes['premiumContent'] : '';
-$businessContent = $attributes['businessContent'] ? $attributes['businessContent'] : '';
+$starterContent = isset($attributes['starterContent']) ? $attributes['starterContent'] : '';
+$premiumContent = isset($attributes['premiumContent']) ? $attributes['premiumContent'] : '';
+$businessContent = isset($attributes['businessContent']) ? $attributes['businessContent'] : '';
 
 if( ! function_exists('fbsCreateArray') ){
 	function fbsCreateArray( $string ){
@@ -82,7 +82,7 @@ if( ! function_exists('fbsCreateArray') ){
 					if( !empty( fbsCreateArray($premiumContent) ) && is_array( fbsCreateArray($premiumContent) ) ){
 						foreach( fbsCreateArray($premiumContent) as $value ){
 							?>
-								<li><?php echo $value ?></li>
+								<li><?php echo esc_html($value)  ?></li>
 							<?php
 						}
 					}
@@ -102,7 +102,7 @@ if( ! function_exists('fbsCreateArray') ){
 					if( !empty( fbsCreateArray($businessContent) ) && is_array( fbsCreateArray($businessContent) ) ){
 						foreach( fbsCreateArray($businessContent) as $value ){
 							?>
-								<li><?php echo $value ?></li>
+								<li><?php echo esc_html($value) ?></li>
 							<?php
 						}
 					}

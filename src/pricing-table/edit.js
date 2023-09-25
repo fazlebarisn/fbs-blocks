@@ -4,14 +4,14 @@ import { Panel, PanelBody, TextControl,  __experimentalNumberControl as NumberCo
 import './editor.scss';
 
 
-export default function Edit( attributes, setAttributes ) {
+export default function Edit( { attributes, setAttributes } ) {
     const { 
         title, starterTitle, starterPrice, premiumTitle, premiumPrice, businessTitle, businessPrice,
         starterBtnText, starterBtnUrl, premiumBtnText, premiumBtnUrl, businessBtnText, businessBtnUrl,
         starterBg, premiumBg, businessBg, starterColor, premiumColor, businesscolor, starterBtnColor,
         starterBtnBg, businessBtnColor, businessBtnBg, premiumTextColor, premiumBgColor
     } = attributes;
-console.log(attributes);
+
     const colors = [
         { name: 'red', color: '#f00' },
         { name: 'white', color: '#fff' },
@@ -19,7 +19,7 @@ console.log(attributes);
         { name: 'dark', color: '#333333' },
     ];
 
-	return (
+    return (
         <div { ...useBlockProps() }>
             <InspectorControls key="setting">
                 <Panel>
@@ -244,5 +244,5 @@ console.log(attributes);
                 </div>
             </div>
         </div>
-	);
+    );
 }

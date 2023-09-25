@@ -1,10 +1,10 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "create-block/fbs-blocks",
+	"name": "fbs-block/block-name",
 	"version": "0.1.0",
 	"title": "Fbs Blocks",
-	"category": "widgets",
+	"category": "fbs-blocks",
 	"icon": "smiley",
 	"description": "Example block scaffolded with Create Block tool.",
 	"example": {},
