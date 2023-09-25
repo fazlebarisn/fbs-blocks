@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Fbs Gutenberg Blocks
+ * Plugin Name:       FBS Blocks
  * Description:       Enhance your WordPress website with a powerful collection of custom Gutenberg blocks. Easily create stunning layouts, add interactive elements, and streamline content creation. With Fbs Gutenberg Blocks, unleash the full potential of the Gutenberg editor for a seamless and dynamic website-building experience.
  * Requires at least: 6.1
  * Requires PHP:      7.0
@@ -9,7 +9,7 @@
  * Author URI:		  https://www.chitabd.com/
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       fbs-gutenberg-blocks
+ * Text Domain:       fbs-blocks
  *
  * @package           fbs-blocks
  */

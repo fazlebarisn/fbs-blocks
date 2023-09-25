@@ -31,11 +31,8 @@ import './editor.scss';
  */
 export default function Edit() {
 	return (
-		<p { ...useBlockProps() }>
-			{ __(
-				'Fbs Gutenberg Blocks – hello from the editor!',
-				'fbs-gutenberg-blocks'
-			) }
+		<p {...useBlockProps()}>
+			{__('Fbs Blocks – hello from the editor!', 'fbs-blocks')}
 		</p>
 	);
 }

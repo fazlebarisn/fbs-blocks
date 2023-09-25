@@ -1,12 +1,12 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "fbs-blocks/pricing-table",
+	"name": "fbs-block/pricing-table",
 	"version": "0.1.0",
 	"title": "Pricing Table",
 	"category": "fbs-blocks",
 	"icon": "analytics",
-	"description": "only for testing",
+	"description": "A beautiful pricing table",
 	"example": {},
 	"supports": {
 		"html": false
@@ -122,9 +122,10 @@
 			"default": "#757BE1"
 		}
 	},
-	"textdomain": "fbs-gutenberg-blocks",
+	"textdomain": "fbs-blocks",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
+	"render": "file:./render.php",
 	"viewScript": "file:./view.js"
 }

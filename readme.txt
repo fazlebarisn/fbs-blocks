@@ -1,77 +1,55 @@
-=== Fbs Gutenberg Blocks ===
-Contributors:      fazlebari
-Tags:              block,GutenbergBlocks,pricingTable,WordPressBlocks,GutenbergEditor,WordPressPlugins,PageBuilder,BlockLibrary
+=== Fbs Blocks ===
+Contributors:      The WordPress Contributors
+Tags:              block
 Tested up to:      6.1
-Stable tag:        1.0.0
+Stable tag:        0.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-A good collection of Gutenberg blocks. Design a beautiful website. 
+Example block scaffolded with Create Block tool.
 
 == Description ==
 
-Easily create eye-catching and informative pricing tables for your WordPress website with the Fbs Gutenberg Blocks. This Gutenberg block empowers you to showcase your products, services, or subscription plans in a visually appealing and organized manner.
+This is the long description. No limit, and you can use Markdown (as well as in the following sections).
 
- See demos - https://www.chitabd.com/fbs-gutenberg-blocks/
-
-🔅 ** Key Features: **🔅<br>
-Here is some inportent featurs of the plugin. <br>
-
-**Intuitive Block Interface**<br>
-Seamlessly integrate the Pricing Table block into the Gutenberg editor for effortless customization and placement.
-
-**Flexible Configuration**<br>
-Customize columns, pricing details, features, and call-to-action buttons to suit your specific offerings.
-
-**Stunning Design Options**<br> 
-Choose from a range of styles, colors, and fonts to match your website's aesthetics.
-
-**Responsive and Mobile-Friendly**<br>
-Ensure your pricing tables look great on any device, providing a consistent user experience.
-
-**Easy-to-Use**<br>
-No coding skills required. Create professional-looking pricing tables with just a few clicks.
-
-**Scalable Solution**<br>
-This is just the beginning! Fbs Gutenberg Blocks is part of a growing collection of powerful Gutenberg blocks.
-
-**Get Started**
-
-=> Install and activate the Fbs Gutenberg Blocks.
-=> Open the Gutenberg editor and add a new block. Look for "Pricing Table" in the block library.
-=> Customize your pricing table with ease, adding details, features, and styling to fit your brand.
-=> Publish your page or post to showcase your pricing options to your audience.
-=> Elevate your product or service offerings with beautifully designed pricing tables. Fbs Gutenberg Blocks simplifies the process, allowing you to focus on what matters most - connecting with your customers.
+For backwards compatibility, if this section is missing, the full length of the short description will be used, and
+Markdown parsed.
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/fbs-gutenberg-blocks` directory, or install the plugin through the WordPress plugins screen directly.
+This section describes how to install the plugin and get it working.
+
+e.g.
+
+1. Upload the plugin files to the `/wp-content/plugins/fbs-blocks` directory, or install the plugin through the WordPress plugins screen directly.
 1. Activate the plugin through the 'Plugins' screen in WordPress
 
 
 == Frequently Asked Questions ==
 
-= Can I use Fbs Gutenberg Blocks with any WordPress theme? =
+= A question that someone might have =
 
-Yes, Fbs Gutenberg Blocks is designed to be compatible with any WordPress theme. It seamlessly integrates with your existing setup, allowing you to enhance your content creation experience without any conflicts
+An answer to that question.
 
-= What types of blocks are included in Fbs Gutenberg Blocks?=
+= What about foo bar? =
 
-1. Pricing Table
-
-== Is Fbs Gutenberg Blocks mobile-friendly? ==
-
-Yes, all blocks in Fbs Gutenberg Blocks are designed to be fully responsive and mobile-friendly. Your content will look great on all devices, ensuring a seamless user experience.
+Answer to foo bar dilemma.
 
 == Screenshots ==
 
-1. Example One
-2. Example Two
-3. Example Three
+1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
+the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
+directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
+(or jpg, jpeg, gif).
+2. This is the second screen shot
 
 == Changelog ==
 
-= 1.0.0 =
+= 0.1.0 =
 * Release
-* Pricing Table
 
+== Arbitrary section ==
+
+You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
+plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
+"installation." Arbitrary sections will be shown below the built-in sections outlined above.

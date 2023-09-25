@@ -18,8 +18,16 @@ var __webpack_exports__ = {};
  * }
  * ```
  *
+ * If you're not making any changes to this file because your project doesn't need any
+ * JavaScript running in the front-end, then you should delete this file and remove
+ * the `viewScript` property from `block.json`.
+ *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script
  */
+
+/* eslint-disable no-console */
+console.log('Hello World! (from create-block-fbs-blocks block)');
+/* eslint-enable no-console */
 /******/ })()
 ;
 //# sourceMappingURL=view.js.map

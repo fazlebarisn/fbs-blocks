@@ -1,9 +1,6 @@
-
 import { __ } from '@wordpress/i18n';
-
 import { useBlockProps, InspectorControls, RichText, PanelColorSettings  } from '@wordpress/block-editor';
 import { Panel, PanelBody, TextControl,  __experimentalNumberControl as NumberControl } from '@wordpress/components';
-
 import './editor.scss';
 
 
@@ -28,7 +25,7 @@ export default function Edit( { attributes, setAttributes } ) {
                 <Panel>
                     <PanelBody title='Header' initialOpen={false}>
                         <TextControl className="blocks-base-control__input"
-                            label={ __('Change Pricing text', 'fbs-gutenberg-blocks') }
+                            label={ __('Change Pricing text', 'fbs-blocks') }
                             value={title}
                             onChange={ (title) => setAttributes( {title: title} ) }
                         />
@@ -36,51 +33,51 @@ export default function Edit( { attributes, setAttributes } ) {
 
                     <PanelBody title='Starter' initialOpen={false}>
                         <TextControl className="blocks-base-control__input"
-                            label={ __('Title text', 'fbs-gutenberg-blocks') }
+                            label={ __('Title text', 'fbs-blocks') }
                             value={starterTitle}
                             onChange={ (title) => setAttributes( {starterTitle: title} ) }
                         />
                         <NumberControl className="blocks-base-control__input"
-                            label={ __('Price', 'fbs-gutenberg-blocks') }
+                            label={ __('Price', 'fbs-blocks') }
                             isShiftStepEnabled={ true }
                             shiftStep={ 10 }
                             value={starterPrice}
                             onChange={ (price) => setAttributes( {starterPrice: price} ) }
                         />
                         <TextControl className="blocks-base-control__input"
-                            label={ __('Button text', 'fbs-gutenberg-blocks') }
+                            label={ __('Button text', 'fbs-blocks') }
                             value={starterBtnText}
                             onChange={ (btnText) => setAttributes( {starterBtnText: btnText} ) }
                         />
                         <TextControl className="blocks-base-control__input"
-                            label={ __('Button Url', 'fbs-gutenberg-blocks') }
+                            label={ __('Button Url', 'fbs-blocks') }
                             value={starterBtnUrl}
                             onChange={ (btnUrl) => setAttributes( {starterBtnUrl: btnUrl} ) }
                         />
                         <PanelColorSettings
-                            title = { __('Colors', 'fbs-gutenberg-blocks') }
+                            title = { __('Colors', 'fbs-blocks') }
                             initialOpen={false}
                             colors={colors}
                             colorSettings={[
                                 {
                                     value:starterBg,
                                     onChange: (color) => setAttributes( {starterBg: color} ),
-                                    label: __('Card Background', 'fbs-gutenberg-blocks')
+                                    label: __('Card Background', 'fbs-blocks')
                                 },
                                 {
                                     value:starterColor,
                                     onChange: (color) => setAttributes( {starterColor: color} ),
-                                    label: __('Card Text Color', 'fbs-gutenberg-blocks')
+                                    label: __('Card Text Color', 'fbs-blocks')
                                 },
                                 {
                                     value:starterBtnColor,
                                     onChange: (color) => setAttributes( {starterBtnColor: color} ),
-                                    label: __(' Button Text Color', 'fbs-gutenberg-blocks')
+                                    label: __(' Button Text Color', 'fbs-blocks')
                                 },
                                 {
                                     value:starterBtnBg,
                                     onChange: (color) => setAttributes( {starterBtnBg: color} ),
-                                    label: __('Button Background Color', 'fbs-gutenberg-blocks')
+                                    label: __('Button Background Color', 'fbs-blocks')
                                 },
                             ]}
                         />
@@ -88,51 +85,51 @@ export default function Edit( { attributes, setAttributes } ) {
 
                     <PanelBody title='Premium' initialOpen={false}>
                         <TextControl className="blocks-base-control__input"
-                            label={ __('Title text', 'fbs-gutenberg-blocks') }
+                            label={ __('Title text', 'fbs-blocks') }
                             value={premiumTitle}
                             onChange={ (title) => setAttributes( {premiumTitle: title} ) }
                         />
                         <NumberControl className="blocks-base-control__input"
-                            label={ __('Price', 'fbs-gutenberg-blocks') }
+                            label={ __('Price', 'fbs-blocks') }
                             isShiftStepEnabled={ true }
                             shiftStep={ 10 }
                             value={premiumPrice}
                             onChange={ (price) => setAttributes( {premiumPrice: price} ) }
                         />
                         <TextControl className="blocks-base-control__input"
-                            label={ __('Button text', 'fbs-gutenberg-blocks') }
+                            label={ __('Button text', 'fbs-blocks') }
                             value={premiumBtnText}
                             onChange={ (btnText) => setAttributes( {premiumBtnText: btnText} ) }
                         />
                         <TextControl className="blocks-base-control__input"
-                            label={ __('Button Url', 'fbs-gutenberg-blocks') }
+                            label={ __('Button Url', 'fbs-blocks') }
                             value={premiumBtnUrl}
                             onChange={ (btnUrl) => setAttributes( {premiumBtnUrl: btnUrl} ) }
                         />
                         <PanelColorSettings
-                            title = { __('Colors', 'fbs-gutenberg-blocks') }
+                            title = { __('Colors', 'fbs-blocks') }
                             initialOpen={false}
                             colors={colors}
                             colorSettings={[
                                 {
                                     value:premiumBg,
                                     onChange: (color) => setAttributes( {premiumBg: color} ),
-                                    label: __('Card Background', 'fbs-gutenberg-blocks')
+                                    label: __('Card Background', 'fbs-blocks')
                                 },
                                 {
                                     value:premiumColor,
                                     onChange: (color) => setAttributes( {premiumColor: color} ),
-                                    label: __('Text Color', 'fbs-gutenberg-blocks')
+                                    label: __('Text Color', 'fbs-blocks')
                                 },
                                 {
                                     value:premiumTextColor,
                                     onChange: (color) => setAttributes( {premiumTextColor: color} ),
-                                    label: __('Button Text Color', 'fbs-gutenberg-blocks')
+                                    label: __('Button Text Color', 'fbs-blocks')
                                 },
                                 {
                                     value:premiumBgColor,
                                     onChange: (color) => setAttributes( {premiumBgColor: color} ),
-                                    label: __('Button Background Color', 'fbs-gutenberg-blocks')
+                                    label: __('Button Background Color', 'fbs-blocks')
                                 },
                             ]}
                         />
@@ -140,51 +137,51 @@ export default function Edit( { attributes, setAttributes } ) {
 
                     <PanelBody title='Business' initialOpen={false}>
                         <TextControl className="blocks-base-control__input"
-                            label={ __('Title text', 'fbs-gutenberg-blocks') }
+                            label={ __('Title text', 'fbs-blocks') }
                             value={businessTitle}
                             onChange={ (title) => setAttributes( {businessTitle: title} ) }
                         />
                         <NumberControl className="blocks-base-control__input"
-                            label={ __('Price', 'fbs-gutenberg-blocks') }
+                            label={ __('Price', 'fbs-blocks') }
                             isShiftStepEnabled={ true }
                             shiftStep={ 10 }
                             value={businessPrice}
                             onChange={ (price) => setAttributes( {businessPrice: price} ) }
                         />
                         <TextControl className="blocks-base-control__input"
-                            label={ __('Button text', 'fbs-gutenberg-blocks') }
+                            label={ __('Button text', 'fbs-blocks') }
                             value={businessBtnText}
                             onChange={ (btnText) => setAttributes( {businessBtnText: btnText} ) }
                         />
                         <TextControl className="blocks-base-control__input"
-                            label={ __('Button Url', 'fbs-gutenberg-blocks') }
+                            label={ __('Button Url', 'fbs-blocks') }
                             value={businessBtnUrl}
                             onChange={ (btnUrl) => setAttributes( {businessBtnUrl: btnUrl} ) }
                         />
                         <PanelColorSettings
-                            title = { __('Colors', 'fbs-gutenberg-blocks') }
+                            title = { __('Colors', 'fbs-blocks') }
                             initialOpen={false}
                             colors={colors}
                             colorSettings={[
                                 {
                                     value:businessBg,
                                     onChange: (color) => setAttributes( {businessBg: color} ),
-                                    label: __('Card Background', 'fbs-gutenberg-blocks')
+                                    label: __('Card Background', 'fbs-blocks')
                                 },
                                 {
                                     value:businesscolor,
                                     onChange: (color) => setAttributes( {businesscolor: color} ),
-                                    label: __('Card Text Color', 'fbs-gutenberg-blocks')
+                                    label: __('Card Text Color', 'fbs-blocks')
                                 },
                                 {
                                     value:businessBtnColor,
                                     onChange: (color) => setAttributes( {businessBtnColor: color} ),
-                                    label: __('Button Text Color', 'fbs-gutenberg-blocks')
+                                    label: __('Button Text Color', 'fbs-blocks')
                                 },
                                 {
                                     value:businessBtnBg,
                                     onChange: (color) => setAttributes( {businessBtnBg: color} ),
-                                    label: __('Button Background Color', 'fbs-gutenberg-blocks')
+                                    label: __('Button Background Color', 'fbs-blocks')
                                 },
                             ]}
                         />
@@ -204,7 +201,7 @@ export default function Edit( { attributes, setAttributes } ) {
                             multiline='li'
                             value={ attributes.starterContent }
                             onChange={ (content) => setAttributes( {starterContent: content} ) }
-                            placeholder={ __('Add list', 'fbs-gutenberg-blocks') }
+                            placeholder={ __('Add list', 'fbs-blocks') }
                         />
                         <a href={starterBtnUrl}>
                             <button className="btn active-btn" style={{background:starterBtnBg,color:starterBtnColor}}>
@@ -220,7 +217,7 @@ export default function Edit( { attributes, setAttributes } ) {
                             multiline='li'
                             value={ attributes.premiumContent }
                             onChange={ ( premiumContent ) => setAttributes( { premiumContent } ) }
-                            placeholder={ __('Add list', 'fbs-gutenberg-blocks') }
+                            placeholder={ __('Add list', 'fbs-blocks') }
                         />
                         <a href={premiumBtnUrl}>
                             <button className="btn active-btn" style={{background:premiumBgColor,color:premiumTextColor}}>
@@ -236,7 +233,7 @@ export default function Edit( { attributes, setAttributes } ) {
                             multiline='li'
                             value={ attributes.businessContent }
                             onChange={ ( businessContent ) => setAttributes( { businessContent } ) }
-                            placeholder={ __('Add list', 'fbs-gutenberg-blocks') }
+                            placeholder={ __('Add list', 'fbs-blocks') }
                         />
                         <a href={businessBtnUrl}>
                             <button className="btn active-btn" style={{background:businessBtnBg,color:businessBtnColor}}>
