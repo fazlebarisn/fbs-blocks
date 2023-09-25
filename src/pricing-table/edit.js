@@ -11,7 +11,7 @@ export default function Edit( attributes, setAttributes ) {
         starterBg, premiumBg, businessBg, starterColor, premiumColor, businesscolor, starterBtnColor,
         starterBtnBg, businessBtnColor, businessBtnBg, premiumTextColor, premiumBgColor
     } = attributes;
-
+console.log(attributes);
     const colors = [
         { name: 'red', color: '#f00' },
         { name: 'white', color: '#fff' },

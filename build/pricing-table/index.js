@@ -54,6 +54,7 @@ function Edit(attributes, setAttributes) {
     premiumTextColor,
     premiumBgColor
   } = attributes;
+  console.log(attributes);
   const colors = [{
     name: 'red',
     color: '#f00'
