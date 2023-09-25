@@ -33,8 +33,7 @@ class FBS_GB_BLOCKS {
 	 */
 	public function register_block(){
 		$block_names = [
-			// 'pricing-table',
-			'test',
+			'pricing-table',
 		];
 		
 		return $block_names;
