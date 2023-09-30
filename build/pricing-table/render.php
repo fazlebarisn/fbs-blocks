@@ -82,7 +82,7 @@ if( ! function_exists('fbsCreateArray') ){
 					if( !empty( fbsCreateArray($premiumContent) ) && is_array( fbsCreateArray($premiumContent) ) ){
 						foreach( fbsCreateArray($premiumContent) as $value ){
 							?>
-								<li><?php echo esc_html($value)  ?></li>
+								<li><?php echo $value  ?></li>
 							<?php
 						}
 					}
@@ -102,7 +102,7 @@ if( ! function_exists('fbsCreateArray') ){
 					if( !empty( fbsCreateArray($businessContent) ) && is_array( fbsCreateArray($businessContent) ) ){
 						foreach( fbsCreateArray($businessContent) as $value ){
 							?>
-								<li><?php echo esc_html($value) ?></li>
+								<li><?php echo $value ?></li>
 							<?php
 						}
 					}
