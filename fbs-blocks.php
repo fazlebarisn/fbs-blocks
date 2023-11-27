@@ -1,18 +1,20 @@
 <?php
 /**
- * Plugin Name:       FBS Blocks
- * Description:       Enhance your WordPress website with a powerful collection of custom Gutenberg blocks. Easily create stunning layouts, add interactive elements, and streamline content creation. With Fbs Gutenberg Blocks, unleash the full potential of the Gutenberg editor for a seamless and dynamic website-building experience.
- * Requires at least: 6.1
- * Requires PHP:      7.0
- * Version:           1.0.0
- * Author:            Fazle Bari
- * Author URI:		  https://www.chitabd.com/
- * License:           GPL-2.0-or-later
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       fbs-blocks
- *
- * @package           fbs-blocks
+ * Plugin Name:			FBS Blocks
+ * Author:            	Fazle Bari
+ * Description:       	Enhance your WordPress website with a powerful collection of custom Gutenberg blocks. Easily create stunning layouts, add interactive elements, and streamline content creation. With Fbs Gutenberg Blocks, unleash the full potential of the Gutenberg editor for a seamless and dynamic website-building experience.
+ * Requires at least:	6.1
+ * Requires PHP:      	7.0
+ * Version:           	1.0.0
+ * Tested up to:	  	6.4.1
+ * Author URI:		  	https://www.chitabd.com/
+ * License:           	GPLv3
+ * Plugin URI: 			https://github.com/fazlebarisn/fbs-blocks
+ * Text Domain:       	fbs-blocks
+ * @package           	fbs-blocks
  */
+
+defined('ABSPATH') or die('Nice Try!');
 
 if ( ! defined( 'FBS_GB_DIR_PATH' ) ) {
 	define( 'FBS_GB_DIR_PATH', __DIR__ );
