@@ -1,8 +1,8 @@
 <?php
 /**
- * Register sidebars 
+ * Register Block
  *
- * @package Fbs block
+ * @package Fbs blocks
  */
 
 namespace FBS_GB_BLOCKS\Inc;
@@ -35,21 +35,21 @@ class FBS_GB_BLOCKS {
 		$block_names = [
 			'pricing-table',
 		];
-		
+
 		return $block_names;
 	}
 
 	/**
 	 * To register block a categoy just need to add the expand the array
 	 * add title and slug
-	 * slug should be unicq 
+	 * slug should be unicq
 	 * @return array $category_names
 	 * @author Fazle Bari
 	 */
 	public function register_categories(){
 		$category_names = [
 			[
-				'title'	=> esc_html__( 'Fbs Blocks', 'fbs-block' ),
+				'title'	=> esc_html__( 'Fbs Blocks', 'fbs-blocks' ),
 				'slug' => 'fbs-blocks',
 			],
 		];

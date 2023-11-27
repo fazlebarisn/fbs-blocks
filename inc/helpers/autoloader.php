@@ -2,7 +2,7 @@
 /**
  * Autoloader file for theme.
  *
- * @package Hadudu
+ * @package fbs-blocks
  */
 
 namespace FBS_GB_BLOCKS\Inc\Helpers;

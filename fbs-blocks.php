@@ -14,7 +14,7 @@
  * @package           fbs-blocks
  */
 
- if ( ! defined( 'FBS_GB_DIR_PATH' ) ) {
+if ( ! defined( 'FBS_GB_DIR_PATH' ) ) {
 	define( 'FBS_GB_DIR_PATH', __DIR__ );
 }
 
@@ -28,5 +28,4 @@ require_once FBS_GB_DIR_PATH . '/inc/helpers/autoloader.php';
 function fbs_gb_blocks_plugin_instance() {
 	\FBS_GB_BLOCKS\Inc\FBS_GB_BLOCKS::get_instance();
 }
-
 fbs_gb_blocks_plugin_instance();
