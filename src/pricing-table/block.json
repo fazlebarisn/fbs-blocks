@@ -25,7 +25,8 @@
 			"default": "19.99"
 		},
 		"starterContent": {
-			"type": "string"
+            "type": "array",
+            "default": []
 		},
 		"starterBtnText": {
 			"type": "string",
@@ -60,7 +61,8 @@
 			"default": "49.99"
 		},
 		"premiumContent": {
-			"type": "string"
+			"type": "array",
+            "default": []
 		},
 		"premiumBtnText": {
 			"type": "string",
@@ -95,7 +97,8 @@
 			"default": "99.99"
 		},
 		"businessContent": {
-			"type": "string"
+			"type": "array",
+            "default": []
 		},
 		"businessBtnText": {
 			"type": "string",

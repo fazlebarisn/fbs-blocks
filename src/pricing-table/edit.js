@@ -9,7 +9,8 @@ export default function Edit( { attributes, setAttributes } ) {
         title, starterTitle, starterPrice, premiumTitle, premiumPrice, businessTitle, businessPrice,
         starterBtnText, starterBtnUrl, premiumBtnText, premiumBtnUrl, businessBtnText, businessBtnUrl,
         starterBg, premiumBg, businessBg, starterColor, premiumColor, businesscolor, starterBtnColor,
-        starterBtnBg, businessBtnColor, businessBtnBg, premiumTextColor, premiumBgColor
+        starterBtnBg, businessBtnColor, businessBtnBg, premiumTextColor, premiumBgColor,starterContent,
+		premiumContent,businessContent,
     } = attributes;
 
     const colors = [
@@ -196,7 +197,15 @@ export default function Edit( { attributes, setAttributes } ) {
                     <div className="fbs-card shadow" style={{background:starterBg,color:starterColor}}>
                         <h3 className="pack" style={{color:starterColor}}>{starterTitle}</h3>
                         <h2 id="starter" className="price bottom-bar" style={{color:starterColor}}>${starterPrice}</h2>
-                        <InnerBlocks />
+						<InnerBlocks
+							allowedBlocks={['core/list']}
+							template={[
+								['core/list'],
+							]}
+							templateLock="all"
+							value={attributes.starterContent}
+							onChange={(value) => setAttributes({ starterContent: value })}
+						/>
                         <a href={starterBtnUrl}>
                             <button className="btn active-btn" style={{background:starterBtnBg,color:starterBtnColor}}>
                                 {starterBtnText}
@@ -206,7 +215,15 @@ export default function Edit( { attributes, setAttributes } ) {
                     <div className="fbs-card active" style={{background:premiumBg,color:premiumColor}}>
                         <h3 className="pack" style={{color:premiumColor}}>{premiumTitle}</h3>
                         <h2 id="premium" className="price bottom-bar" style={{color:premiumColor}}>${premiumPrice}</h2>
-						<InnerBlocks />
+						<InnerBlocks
+							allowedBlocks={['core/list']}
+							template={[
+								['core/list'],
+							]}
+							templateLock="all"
+							value={attributes.premiumContent}
+							onChange={(value) => setAttributes({ premiumContent: value })}
+						/>
                         <a href={premiumBtnUrl}>
                             <button className="btn active-btn" style={{background:premiumBgColor,color:premiumTextColor}}>
                                 {premiumBtnText}
@@ -216,7 +233,15 @@ export default function Edit( { attributes, setAttributes } ) {
                     <div className="fbs-card shadow" style={{background:businessBg,color:businesscolor}}>
                         <h3 className="pack" style={{color:businesscolor}}>{businessTitle}</h3>
                         <h2 id="business" className="price bottom-bar" style={{color:businesscolor}}>${businessPrice}</h2>
-                        <InnerBlocks />
+						<InnerBlocks
+							allowedBlocks={['core/list']}
+							template={[
+								['core/list'],
+							]}
+							templateLock="all"
+							value={attributes.businessContent}
+							onChange={(value) => setAttributes({ businessContent: value })}
+						/>
                         <a href={businessBtnUrl}>
                             <button className="btn active-btn" style={{background:businessBtnBg,color:businessBtnColor}}>
                                 {businessBtnText}

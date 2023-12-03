@@ -1,8 +1,8 @@
 <?php
 
-$starterContent = isset($attributes['starterContent']) ? $attributes['starterContent'] : '';
-$premiumContent = isset($attributes['premiumContent']) ? $attributes['premiumContent'] : '';
-$businessContent = isset($attributes['businessContent']) ? $attributes['businessContent'] : '';
+// $starterContent = isset($attributes['starterContent']) ? $attributes['starterContent'] : '';
+// $premiumContent = isset($attributes['premiumContent']) ? $attributes['premiumContent'] : '';
+// $businessContent = isset($attributes['businessContent']) ? $attributes['businessContent'] : '';
 
 if( ! function_exists('fbsCreateArray') ){
 	function fbsCreateArray( $string ){
@@ -54,13 +54,7 @@ if( ! function_exists('fbsCreateArray') ){
 			<h2 id="starter" class="price bottom-bar">$<?php echo esc_html( $attributes['starterPrice'] ); ?></h2>
 			<ul>
 				<?php
-					if( !empty( fbsCreateArray($starterContent) ) && is_array( fbsCreateArray($starterContent) ) ){
-						foreach( fbsCreateArray($starterContent) as $value ){
-							?>
-								<li><?php echo $value ?></li>
-							<?php
-						}
-					}
+					dd($starterContent);
 				?>
 			</ul>
 			<a href=<?php echo esc_html( $attributes['starterBtnUrl'] ); ?>>

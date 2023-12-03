@@ -55,7 +55,10 @@ function Edit({
     businessBtnColor,
     businessBtnBg,
     premiumTextColor,
-    premiumBgColor
+    premiumBgColor,
+    starterContent,
+    premiumContent,
+    businessContent
   } = attributes;
   const colors = [{
     name: 'red',
@@ -291,14 +294,14 @@ function Edit({
     style: {
       color: starterColor
     }
-  }, "$", starterPrice), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    tagName: "ul",
-    multiline: "li",
+  }, "$", starterPrice), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
+    allowedBlocks: ['core/list'],
+    template: [['core/list']],
+    templateLock: "all",
     value: attributes.starterContent,
-    onChange: content => setAttributes({
-      starterContent: content
-    }),
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add list', 'fbs-blocks')
+    onChange: value => setAttributes({
+      starterContent: value
+    })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: starterBtnUrl
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
@@ -324,7 +327,15 @@ function Edit({
     style: {
       color: premiumColor
     }
-  }, "$", premiumPrice), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, "$", premiumPrice), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
+    allowedBlocks: ['core/list'],
+    template: [['core/list']],
+    templateLock: "all",
+    value: attributes.premiumContent,
+    onChange: value => setAttributes({
+      premiumContent: value
+    })
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: premiumBtnUrl
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "btn active-btn",
@@ -349,14 +360,14 @@ function Edit({
     style: {
       color: businesscolor
     }
-  }, "$", businessPrice), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    tagName: "ul",
-    multiline: "li",
+  }, "$", businessPrice), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
+    allowedBlocks: ['core/list'],
+    template: [['core/list']],
+    templateLock: "all",
     value: attributes.businessContent,
-    onChange: businessContent => setAttributes({
-      businessContent
-    }),
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add list', 'fbs-blocks')
+    onChange: value => setAttributes({
+      businessContent: value
+    })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: businessBtnUrl
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
@@ -498,7 +509,7 @@ module.exports = window["wp"]["i18n"];
   \**************************************/
 /***/ (function(module) {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"fbs-block/pricing-table","version":"0.1.0","title":"Pricing Table","category":"fbs-blocks","icon":"analytics","description":"A beautiful pricing table","example":{},"supports":{"html":false},"attributes":{"title":{"type":"string","default":"Our Pricing"},"starterTitle":{"type":"string","default":"Starter"},"starterPrice":{"type":"number","default":"19.99"},"starterContent":{"type":"string"},"starterBtnText":{"type":"string","default":"Purchase"},"starterBtnUrl":{"type":"string","default":"#"},"starterBg":{"type":"string","default":"#fff"},"starterColor":{"type":"string","default":"#484B5D"},"starterBtnColor":{"type":"string","default":"#fff"},"starterBtnBg":{"type":"string","default":"#757BE1"},"premiumTitle":{"type":"string","default":"Premium"},"premiumPrice":{"type":"number","default":"49.99"},"premiumContent":{"type":"string"},"premiumBtnText":{"type":"string","default":"Purchase"},"premiumBtnUrl":{"type":"string","default":"#"},"premiumBg":{"type":"string","default":"#9A9FED"},"premiumColor":{"type":"string","default":"#fff"},"premiumTextColor":{"type":"string","default":"#797FE3"},"premiumBgColor":{"type":"string","default":"#fff"},"businessTitle":{"type":"string","default":"Business"},"businessPrice":{"type":"number","default":"99.99"},"businessContent":{"type":"string"},"businessBtnText":{"type":"string","default":"Purchase"},"businessBtnUrl":{"type":"string","default":"#"},"businessBg":{"type":"string","default":"#fff"},"businesscolor":{"type":"string","default":"#484B5D"},"businessBtnColor":{"type":"string","default":"#fff"},"businessBtnBg":{"type":"string","default":"#757BE1"}},"textdomain":"fbs-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"fbs-block/pricing-table","version":"0.1.0","title":"Pricing Table","category":"fbs-blocks","icon":"analytics","description":"A beautiful pricing table","example":{},"supports":{"html":false},"attributes":{"title":{"type":"string","default":"Our Pricing"},"starterTitle":{"type":"string","default":"Starter"},"starterPrice":{"type":"number","default":"19.99"},"starterContent":{"type":"array","default":[]},"starterBtnText":{"type":"string","default":"Purchase"},"starterBtnUrl":{"type":"string","default":"#"},"starterBg":{"type":"string","default":"#fff"},"starterColor":{"type":"string","default":"#484B5D"},"starterBtnColor":{"type":"string","default":"#fff"},"starterBtnBg":{"type":"string","default":"#757BE1"},"premiumTitle":{"type":"string","default":"Premium"},"premiumPrice":{"type":"number","default":"49.99"},"premiumContent":{"type":"array","default":[]},"premiumBtnText":{"type":"string","default":"Purchase"},"premiumBtnUrl":{"type":"string","default":"#"},"premiumBg":{"type":"string","default":"#9A9FED"},"premiumColor":{"type":"string","default":"#fff"},"premiumTextColor":{"type":"string","default":"#797FE3"},"premiumBgColor":{"type":"string","default":"#fff"},"businessTitle":{"type":"string","default":"Business"},"businessPrice":{"type":"number","default":"99.99"},"businessContent":{"type":"array","default":[]},"businessBtnText":{"type":"string","default":"Purchase"},"businessBtnUrl":{"type":"string","default":"#"},"businessBg":{"type":"string","default":"#fff"},"businesscolor":{"type":"string","default":"#484B5D"},"businessBtnColor":{"type":"string","default":"#fff"},"businessBtnBg":{"type":"string","default":"#757BE1"}},"textdomain":"fbs-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 
