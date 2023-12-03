@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @see https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md#render
- */
-//style= background:starterBg,color:starterColor
-
 $starterContent = isset($attributes['starterContent']) ? $attributes['starterContent'] : '';
 $premiumContent = isset($attributes['premiumContent']) ? $attributes['premiumContent'] : '';
 $businessContent = isset($attributes['businessContent']) ? $attributes['businessContent'] : '';
@@ -58,7 +53,7 @@ if( ! function_exists('fbsCreateArray') ){
 			<h3 class="pack"><?php echo esc_html( $attributes['starterTitle'] ); ?></h3>
 			<h2 id="starter" class="price bottom-bar">$<?php echo esc_html( $attributes['starterPrice'] ); ?></h2>
 			<ul>
-				<?php 
+				<?php
 					if( !empty( fbsCreateArray($starterContent) ) && is_array( fbsCreateArray($starterContent) ) ){
 						foreach( fbsCreateArray($starterContent) as $value ){
 							?>
@@ -78,7 +73,7 @@ if( ! function_exists('fbsCreateArray') ){
 			<h3 class="pack"><?php echo esc_html( $attributes['premiumTitle'] ); ?></h3>
 			<h2 id="premium" class="price bottom-bar"><?php echo esc_html( $attributes['premiumPrice'] ); ?></h2>
 			<ul>
-				<?php 
+				<?php
 					if( !empty( fbsCreateArray($premiumContent) ) && is_array( fbsCreateArray($premiumContent) ) ){
 						foreach( fbsCreateArray($premiumContent) as $value ){
 							?>
@@ -98,7 +93,7 @@ if( ! function_exists('fbsCreateArray') ){
 			<h3 class="pack"><?php echo esc_html( $attributes['businessTitle'] ); ?></h3>
 			<h2 id="business" class="price bottom-bar"><?php echo esc_html( $attributes['businessPrice'] ); ?></h2>
 			<ul>
-				<?php 
+				<?php
 					if( !empty( fbsCreateArray($businessContent) ) && is_array( fbsCreateArray($businessContent) ) ){
 						foreach( fbsCreateArray($businessContent) as $value ){
 							?>

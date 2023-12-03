@@ -1,11 +1,11 @@
 import { __ } from '@wordpress/i18n';
-import { useBlockProps, InspectorControls, RichText, PanelColorSettings  } from '@wordpress/block-editor';
+import { useBlockProps, InspectorControls, RichText, PanelColorSettings, InnerBlocks  } from '@wordpress/block-editor';
 import { Panel, PanelBody, TextControl,  __experimentalNumberControl as NumberControl } from '@wordpress/components';
 import './editor.scss';
 
 
 export default function Edit( { attributes, setAttributes } ) {
-    const { 
+    const {
         title, starterTitle, starterPrice, premiumTitle, premiumPrice, businessTitle, businessPrice,
         starterBtnText, starterBtnUrl, premiumBtnText, premiumBtnUrl, businessBtnText, businessBtnUrl,
         starterBg, premiumBg, businessBg, starterColor, premiumColor, businesscolor, starterBtnColor,
@@ -196,13 +196,7 @@ export default function Edit( { attributes, setAttributes } ) {
                     <div className="fbs-card shadow" style={{background:starterBg,color:starterColor}}>
                         <h3 className="pack" style={{color:starterColor}}>{starterTitle}</h3>
                         <h2 id="starter" className="price bottom-bar" style={{color:starterColor}}>${starterPrice}</h2>
-                        <RichText
-                            tagName='ul'
-                            multiline='li'
-                            value={ attributes.starterContent }
-                            onChange={ (content) => setAttributes( {starterContent: content} ) }
-                            placeholder={ __('Add list', 'fbs-blocks') }
-                        />
+                        <InnerBlocks />
                         <a href={starterBtnUrl}>
                             <button className="btn active-btn" style={{background:starterBtnBg,color:starterBtnColor}}>
                                 {starterBtnText}
@@ -212,13 +206,7 @@ export default function Edit( { attributes, setAttributes } ) {
                     <div className="fbs-card active" style={{background:premiumBg,color:premiumColor}}>
                         <h3 className="pack" style={{color:premiumColor}}>{premiumTitle}</h3>
                         <h2 id="premium" className="price bottom-bar" style={{color:premiumColor}}>${premiumPrice}</h2>
-                        <RichText
-                            tagName='ul'
-                            multiline='li'
-                            value={ attributes.premiumContent }
-                            onChange={ ( premiumContent ) => setAttributes( { premiumContent } ) }
-                            placeholder={ __('Add list', 'fbs-blocks') }
-                        />
+						<InnerBlocks />
                         <a href={premiumBtnUrl}>
                             <button className="btn active-btn" style={{background:premiumBgColor,color:premiumTextColor}}>
                                 {premiumBtnText}
@@ -228,13 +216,7 @@ export default function Edit( { attributes, setAttributes } ) {
                     <div className="fbs-card shadow" style={{background:businessBg,color:businesscolor}}>
                         <h3 className="pack" style={{color:businesscolor}}>{businessTitle}</h3>
                         <h2 id="business" className="price bottom-bar" style={{color:businesscolor}}>${businessPrice}</h2>
-                        <RichText
-                            tagName='ul'
-                            multiline='li'
-                            value={ attributes.businessContent }
-                            onChange={ ( businessContent ) => setAttributes( { businessContent } ) }
-                            placeholder={ __('Add list', 'fbs-blocks') }
-                        />
+                        <InnerBlocks />
                         <a href={businessBtnUrl}>
                             <button className="btn active-btn" style={{background:businessBtnBg,color:businessBtnColor}}>
                                 {businessBtnText}
